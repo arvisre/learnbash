@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "there's no extension for this script file"
+
+echo 'the extension .sh is not really necessary'
