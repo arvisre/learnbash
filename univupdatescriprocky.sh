@@ -15,3 +15,4 @@ sudo dnf update #sudo dnf upgrade -y
 else
 echo "This system does not run Rocky Linux"
 fi
+#I couldn't get this to run on Rocky"
