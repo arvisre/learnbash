@@ -8,6 +8,8 @@ if [ $? -ne 0 ]
 
 then
 sudo apt install ssh
+#i must have used the -y option with the above command. it would have one less human intervention.
+
 fi
 #install ssh
 
