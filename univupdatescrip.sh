@@ -15,4 +15,4 @@ sudo dnf update; sudo dnf upgrade -y
 
 fi
 #Jay Lacroix also had a similar approach: checking /etc/os-release. Then he does a grep, but his approach uses a -q option for grep.
-#I'm glad I had a similar but not so successful approach.
+#I'm glad I had a similar thoughtprocess, although not so successful approach.
