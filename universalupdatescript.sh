@@ -6,6 +6,7 @@ chkosrel=/etc/os-release
 if
 	grep -i -q "ubuntu" $chkosrel || grep -iq "debian" $chkosrel
 	#grep -i for ignoring case
+ 	#grep -q means quiet mode; no output on screen
 	then
 	sudo apt update; sudo apt dist-upgrade -y
 fi
