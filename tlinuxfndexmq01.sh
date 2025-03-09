@@ -28,5 +28,5 @@ mv $file $mdate
 #move each file to its corresponding directory
 
 done
-
-
+#as a side note, the following command is a combination of the "find" and "date" commands used above
+# find . -maxdepth 1 -type f -name '*.txt' -exec date -r {} +%Y%m%d ';'
