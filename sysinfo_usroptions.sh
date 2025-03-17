@@ -11,6 +11,9 @@ echo "This computer ""$(hostname)"" has been up for $(uptime | cut -d, -f1 | cut
 echo "The host's Network Information is $(ip address show | grep -w "inet" | grep -v "127.0.0.*/*")"
 #like uptime, this one is also tricky. the first grep searches for the exact term inet. the second grep prints everying other than the loopback address
 
+#mid march 2025 i found out that the command hostname with the -I switch will output the IP Address of the host; the -i switch will outoput the loopback address.
+#hence the above command, using grep -w inet and then grep -v can be totally avoided.
+
 echo "What would you like to do further ?"
 
 echo " Press (1) to Update Computer (2) to Carry on with work or (3) Power Off"
