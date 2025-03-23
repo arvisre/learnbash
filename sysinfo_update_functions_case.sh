@@ -7,6 +7,9 @@ sysinfo()
 echo "The Computer Name is: $(hostname)"
 echo "You have logged in as: $(whoami)"
 echo "Network Information: $(ip address show | grep -w "inet" | grep -v "127.0.0.*/*")"
+#mid march 2025 i found out that the command hostname with the -I switch will output the IP Address of the host; 
+#the -i switch will output the loopback address.
+#hence the above command, using grep -w inet and then grep -v can be totally avoided.
 echo "The System has been up for (HH:MM): $(uptime | cut -d, -f1 | cut -d' ' -f4,5)"
 echo "The Operating System is: $(uname -s)"
 echo "The Computer Architecture is: $(arch)"
