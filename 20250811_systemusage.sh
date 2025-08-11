@@ -21,3 +21,4 @@ echo "The load averages are 5 minutes: "$(w | awk 'NR==1{print $8}')" 10 minutes
 echo "Memory Usage: "$(free --mega | awk 'NR==2{print "Memory Free(in MB):", $4}')" "
 
 echo "Root Filesystem usage is at: "$(df -hT /dev/nvme0n1p2 | awk 'NR==2{print "Root Filesystem usage is at:", $6}')" "
+
